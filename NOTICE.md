@@ -1,4 +1,4 @@
-# NOTICE — sources, rights, and the evidence rule
+# NOTICE: sources, rights, and the evidence rule
 
 ## What this repository publishes
 
@@ -14,13 +14,13 @@ the power and control legs. Nothing else.
   else is paraphrased, with a locator (section, page or DOI) so a reader can
   check the claim against the source.
 
-Where a source's exact wording *is* the evidence — a stated condition of
-convergence, or the name a source gives to a quantity — the shortest clause that
+Where a source's exact wording *is* the evidence, a stated condition of
+convergence, or the name a source gives to a quantity, the shortest clause that
 carries the claim is quoted, in quotation marks, with attribution.
 
 **The one exception, and why it is principled rather than convenient.** The two
 legs added on 2026-10-14 (`findings-power.md`, `findings-control.md`) rest on
-**encyclopaedia text**, chiefly Wikipedia, which is licensed **CC BY-SA** — free
+**encyclopaedia text**, chiefly Wikipedia, which is licensed **CC BY-SA**, free
 to reuse *with attribution*. Quoting it at sentence length is expressly
 permitted by its licence, so those two documents quote it more fully than the
 short-phrase rule would allow for a **restricted** source, and every quotation is
@@ -32,19 +32,19 @@ is exactly the kind of thing this project corrects elsewhere.
 Nothing is held on disk either: no `References/` folder, no cached copies, no
 extractions.
 
-## Verification status of citations — and why the rule is strict here
+## Verification status of citations: and why the rule is strict here
 
 Every citation carries a tag:
 
-- `[verified]` — the source's own text, or at minimum its own registered
+- `[verified]`: the source's own text, or at minimum its own registered
   metadata record, was read, and the claim rests on it.
-- `[unverified]` — a lead from a search result or a third-party citation,
+- `[unverified]`: a lead from a search result or a third-party citation,
   **not** checked against the source's own record.
-- `[discarded]` — a lead that failed verification, recorded so it is not
+- `[discarded]`: a lead that failed verification, recorded so it is not
   re-adopted.
 
 **Why this matters.** In the workstream immediately preceding this repository,
-two searches returned **fabricated reference identifiers** — NTRS citation IDs
+two searches returned **fabricated reference identifiers**, NTRS citation IDs
 that resolved to unrelated documents, presented in the same confident register as
 the genuine results. The sibling `closure-audit` therefore separates `[primary]`
 from `[secondary]` evidence and refuses to rest a claim on the latter.
@@ -64,7 +64,7 @@ Its *application* is what the findings documents test. The distinction matters:
   would do it.
 
 A negative result here is stated as **"no demonstrated machine meets the
-criterion, and here is where each attempt stops"** — never as "therefore
+criterion, and here is where each attempt stops"**, never as "therefore
 impossible." Absence of a demonstration is not proof of impossibility, and this
 repository will not present it as one.
 
@@ -79,7 +79,7 @@ where they appear.
 ## This repository's licence
 
 Written analysis and documentation: **Creative Commons Attribution 4.0
-International (CC BY 4.0)** — see `LICENSE`. There is no code here, and this
+International (CC BY 4.0)**, see `LICENSE`. There is no code here, and this
 project does not intend to add any.
 
 Copyright © 2026 Thymeed.
