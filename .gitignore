@@ -22,3 +22,6 @@ _research/
 Thumbs.db
 .DS_Store
 desktop.ini
+
+# Session handoff. Kept locally on disk, not published.
+HANDOFF.md
