@@ -12,6 +12,10 @@
 # Working scratch, if any. Never published.
 .cache/
 
+# Python bytecode from model/controller_budget.py. Never published.
+__pycache__/
+*.pyc
+
 # Working scratch from the research sub-agent: contains retrieved third-party
 # source text (encyclopaedia extracts) used only for evidence-tagging during the
 # power leg. Must not be committed, per NOTICE.md ("sources are cited, never

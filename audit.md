@@ -66,6 +66,11 @@ criterion condemns the data center; the closure-compatible replacement exists, a
 it cascades. What remains open is the *measured* wall-attachment gain (the Rung-1
 measurement) and the fan-out limit, neither of which is a demonstrated obstacle.
 
+The control leg has since acquired the quantity it was missing. The sibling
+priced the controller per element but carried `GATE_COUNTS = (20, 100)` tagged
+"not known"; [`findings-logic.md`](findings-logic.md) derives the count from the
+controller's structure and prices the buffer trees a fan-out of three requires.
+
 ### The challenge to the dismissal: tested, and it partly succeeds
 
 That repo dismissed **relay logic** in one line: ruled out by "contact and magnet

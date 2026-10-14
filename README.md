@@ -71,6 +71,12 @@ findings-control.md  the control leg: does relay logic compose, and can it be
                      built in-closure? (it can, on the evidence found)
 findings-gain.md     the gain leg: is the sibling's cascade verdict an inversion?
                      (gain is ~2–10, not 0.10–0.51; the limit is fan-out)
+findings-logic.md    the logic leg, the count the study could not supply: how
+                     many elements a replication controller needs, derived from
+                     its structure instead of assumed
+model/               the arithmetic behind findings-logic.md. Standard library
+                     only. Run `python model/controller_budget.py`, or add
+                     `--verify` for the self-checks
 NOTICE.md            sources, rights, and the evidence rule
 ```
 
@@ -89,8 +95,7 @@ estimating; the explicit ABSENT lists are `findings-power.md` §5 and
 **The result, in one line:** every leg ends at an **unmeasured quantity**, not at a
 demonstrated impossibility. That is the honest shape of the study.
 
-**Three results worth the reader's time, all corrections to the sibling study:**
-
+**Four results worth the reader's time, all corrections to the sibling study:**
 - **The reactor half of the study's own name had never been investigated.**
   Result: direct heat/light→electricity conversion is condemned by the same rule
   as the data center, but **combustion, water and wind prime movers survive**, and
@@ -106,6 +111,16 @@ demonstrated impossibility. That is the honest shape of the study.
   and notes it can be **infinite** for a latching element. The gain is therefore
   **≈2–10**, and the real limit is **fan-out depth**, with **fan-out of 3 a
   worked design case** in the same text.
+- **And the controller's size was assumed, not counted.** `src/labour.py` priced
+  the control system with `GATE_COUNTS = (20, 100)`, tagged "not known".
+  `findings-logic.md` derives the count from the controller's own structure:
+  about four elements per step of the cycle, so a cycle of 10 to 50 steps costs
+  45 to 200 elements. The two assumed counts invert to a 6-step cycle and a
+  26-step cycle, which makes the sibling's floor too low, and it puts the control
+  system at **roughly 40 to 50 per cent of the labour of one generation**, not
+  the small share the floor implied. The fan-out limit the sibling called a wall
+  appears in the same arithmetic as a doubling of the element count: a price,
+  with a number attached.
 
 ## Rights
 
