@@ -94,28 +94,38 @@ excitation of the generator, DC contact arcing, low-current contact filming, and
 speed/life — **none of which is quantified yet**. It would also make the
 sibling's "fluidics is the only candidate" claim too strong.
 
-### A tension that must be reconciled, not smoothed over
+### The tension in the sibling's central number — investigated in findings-gain.md, and it resolves against the sibling
 
-The relay leg surfaced a **potential problem in the sibling's core number**, and
-it is recorded here rather than resolved:
+The relay leg surfaced a **problem in the sibling's core number**. It has now
+been investigated directly, and the result is in
+[`findings-gain.md`](findings-gain.md). Summary:
 
-- The sibling reads its momentum ratio `J_c/J_p = (p_c/p_p)·(b_c/w)` = 0.10–0.51
-  as evidence that *a stage cannot reach parity* — i.e. it treats the **required
-  control-to-power ratio** as if it were the **available gain**.
-- But in a bistable wall-attachment element the **output** is the deflected power
-  jet, so a control that switches at 0.2–0.5 of the power jet implies a device
-  **gain of roughly 1/0.5 to 1/0.2 = 2 to 5** — above 1, not below it.
-- Wikipedia's *Fluidics* article states flatly that fluidic amplifiers "have
-  gain" (a weak control stream deflects a stronger one), which is exactly the
-  opposite of the sibling's conclusion.
+- The sibling's Path 2 computes `J_c/J_p = (p_c/p_p)·(b_c/w)` = 0.10–0.51 and
+  reads it as **a gain that falls short of parity**. But that quantity is the
+  momentum the **control input must supply** to switch the power jet — a
+  **requirement**. The **output is the deflected power jet**, so the gain is the
+  **reciprocal**: `1/0.51 … 1/0.10` ≈ **2–10**, comfortably **above** 1.
+- Primary text says so directly: in a fluidic amplifier the control stream is
+  **weaker** than the stream it deflects, *"so the device has gain"*
+  `[verified]`, Wikipedia *Fluidics*.
+- Path 1 (the measured 0.30 "flow gain") is a **different quantity** —
+  small-signal *flow* gain — on a **different mechanism** (membrane valve, which
+  the sibling itself flags as a cross-mechanism transfer). Flow gain is not the
+  cascade criterion.
+- **FLODAC (1964)**, an all-fluidic digital computer, is an existence proof that
+  fluidic stages do drive their successors `[verified]`.
 
-**These may be reconcilable** — device gain vs. *system cascade margin under
-fan-out* are different quantities, and feeding three successors at 0.2–0.5 each
-would need 0.6–1.5× the power jet, so 3-way fan-out is marginal even if 1-way is
-comfortable. But they read as contradictory, and the difference is exactly the
-crux. **This is an open question that could flip the study's central verdict, and
-it is flagged, not settled.** Settling it needs a careful reading of a fluidic
-amplifier's gain definition, or the Rung-1 measurement.
+**So the sibling's verdict — "a single fluidic stage cannot drive even one
+matched successor" — is not supported by its own numbers.** The revised, honest
+statement is: **a fluidic stage has gain > 1 and can drive a successor; the real
+constraint is fan-out depth**, reported as shallow (≈2–3, `[unverified]` — no
+figure verified to primary text).
+
+**Caveat carried forward:** this is a **logical** resolution of the sibling's own
+arithmetic, corroborated by one authoritative sentence and an existence proof. It
+is **not** a measured gain figure, and the definitive answer remains the Rung-1
+measurement or a fluidics textbook's fan-out number. `findings-gain.md` §4 lists
+what would close it; §5 lists what is ABSENT.
 
 ---
 
@@ -214,10 +224,11 @@ Apply the criterion (`protocol.md` §3) with K = the pre-industrial closure
 - **Precision — inside, conditionally.** The three-plate process is in K
   (abrasive + three rough plates + labour), *if* its error-limiting behaviour
   transfers from measuring to making. That is leg 2, and it is open.
-- **Control — the only inside candidate is fluidic, and it is blocked.** Leg 1 —
-  though relay logic is a second in-closure candidate whose dismissal does not
-  survive testing (Leg 1, "The challenge to the dismissal").
-- **Power — undetermined.** Leg 3.
+- **Control — two in-closure candidates, not one.** Leg 1 tested the sibling's
+  dismissal of relay logic (it does not survive) and its cascade verdict (it is
+  an **inversion** of its own number — see `findings-gain.md`). Fluidic logic
+  **can** drive a successor; the limit is fan-out depth.
+- **Power — inside, conditionally.** Leg 3.
 
 **The verdict this repository can state today:**
 
@@ -228,12 +239,11 @@ Apply the criterion (`protocol.md` §3) with K = the pre-industrial closure
 | Leg | In-closure candidate | Where it stops |
 |---|---|---|
 | Precision | three-plate generation | the measure→make transfer, untested |
-| Control | fluidic logic; **relay logic** | cascade gain (fluidic); relay costs unquantified |
+| Control | fluidic logic; relay logic | fluidic **fan-out depth**; relay costs unquantified |
 | Power | combustion / water / wind + self-excited dynamo | first excitation; soft-iron cores; insulation |
 | Disclosure | — | the literature discloses; nobody demonstrates the brain being made |
 
-**Three findings changed the picture, and each was a leg that did not exist
-before this repository or the session that built it:**
+**Four findings changed the picture:**
 
 1. **The reactor half had never been investigated** — this repository's reason to
    exist. Its result: direct heat/light→electricity conversion is condemned by
@@ -246,19 +256,22 @@ before this repository or the session that built it:**
    dissolves; the residual hole is materials and a first-excitation bootstrap,
    not principle.
 3. **The control leg's "only candidate" claim does not survive testing** — relay
-   logic composes (>1 by architecture) and its materials are in-closure, so the
-   cascade wall is specific to the fluidic element.
+   logic composes (>1 by architecture) and its materials are in-closure.
+4. **And the cascade verdict itself does not survive** — `findings-gain.md` shows
+   the sibling's Path 2 reads a **required input fraction** as an **available
+   gain**, inverting it. On its own numbers the momentum gain is ≈2–10, **above**
+   parity. The mechanism statement (a weak stream deflects a stronger one) and
+   FLODAC (1964) both confirm the direction.
 
-**So the binding constraint is still not settled, and the study is honest about
-that.** Two candidates compete for it, and both are blocked on *measurement, not
-argument*: the fluidic **cascade gain** (the sibling's number, whose
-interpretation leg 1 now questions), and the relay leg's **unquantified costs**.
-Resolving it requires the one measurement the sibling repo has always
-named — a wall-attachment gain figure — and now, additionally, a period relay's
-gain and contact life.
+**So the binding constraint has moved, and it is smaller than the study claimed.**
+It is no longer "a fluidic stage cannot drive its successor". It is:
+**fluidic fan-out is shallow** (≈2–3, `[unverified]`), plus the relay leg's
+unquantified costs, plus labour. All three are **quantities to measure**, not
+walls — and the study's original verdict rested on an arithmetic slip. Resolving
+what remains needs the Rung-1 measurement and a fluidics text's fan-out figure.
 
-**What this repository can say with confidence:** the study's original
-one-line dismissal of relays was too fast, its "fluidics is the only candidate"
-claim is too strong, and the reactor half of its own name had never been looked
-at. Those are corrections, and they are the honest output of four legs that
-mostly produced *bounds and gaps* rather than a verdict.
+**What this repository can say with confidence:** the study's dismissal of
+relays was too fast, its "fluidics is the only candidate" claim is too strong,
+its cascade verdict rests on an inverted quantity, and the reactor half of its own
+name had never been looked at. Those are corrections, and they are the honest
+output of legs that produced *bounds and gaps* rather than a verdict.

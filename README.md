@@ -68,6 +68,8 @@ findings-power.md    the power leg: which prime movers sit inside the closure,
                      which are condemned, and the mobile-vs-stationary finding
 findings-control.md  the control leg: does relay logic compose, and can it be
                      built in-closure? (it can, on the evidence found)
+findings-gain.md     the gain leg: is the sibling's cascade verdict an inversion?
+                     (it is — gain is ~2–10, not 0.10–0.51; the limit is fan-out)
 NOTICE.md            sources, rights, and the evidence rule
 ```
 
@@ -88,9 +90,14 @@ ABSENT lists.
   is not condemned; a **mobile** one is not shown to work.
 - **Relay logic was dismissed too fast.** It **composes** — per-stage gain > 1 by
   architecture — and its materials sit inside the closure, so the fluidic cascade
-  wall is specific to fluidics, not to non-semiconductor control. This also
-  surfaces a **tension in the sibling's central number** that could flip the
-  study's verdict: see `audit.md` §"A tension that must be reconciled".
+  wall is specific to fluidics, not to non-semiconductor control.
+- **And the cascade verdict itself was inverted.** `findings-gain.md` shows the
+  sibling read a **required** control fraction (0.10–0.51) as an **available**
+  gain. The gain is the reciprocal, **≈2–10 — above parity.** Fluidic logic
+  **can** drive a successor; the real limit is **fan-out depth** (≈2–3,
+  `[unverified]`). The mechanism statement (*a weak stream deflects a stronger
+  one*) and FLODAC (1964, an all-fluidic digital computer) both confirm the
+  direction.
 
 ## Rights
 

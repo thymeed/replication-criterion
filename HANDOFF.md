@@ -65,17 +65,30 @@ subsystem that makes it a machine.
 - **Rights: cite, never held.** No source PDFs, no extractions, no figures, no
   passage longer than a short phrase.
 
-## Open question that could flip the study's verdict — do not smooth it over
+## Open question — now RESOLVED against the sibling
 
-`audit.md` §"A tension that must be reconciled" records it: the sibling reads its
-momentum ratio `J_c/J_p` (0.10–0.51) as evidence a stage **cannot reach parity**,
-but that ratio is the **required control-to-power ratio**; in a bistable element
-the output is the *deflected power jet*, which implies a device **gain of ~2–5**.
-Wikipedia *Fluidics* says fluidic amplifiers "have gain", the opposite of the
-sibling's conclusion. **Device gain vs. system cascade margin under fan-out** may
-reconcile them (3-way fan-out at 0.2–0.5 each needs 0.6–1.5× the power jet, so it
-is marginal even if 1-way is fine) — but this is **flagged, not settled**, and
-settling it needs a fluidic amplifier gain definition or the Rung-1 measurement.
+`audit.md` and `findings-gain.md` record it: the sibling reads its momentum ratio
+`J_c/J_p` (0.10–0.51) as evidence a stage **cannot reach parity**, but that ratio
+is the **required control-to-power ratio**. The output is the deflected power
+jet, so the gain is the **reciprocal — ≈2–10, above 1.** Primary text confirms
+the direction (*a weak stream deflects a stronger one, "so the device has gain"*)
+and FLODAC (1964) is an existence proof of fluidic cascading.
+
+**Consequence: the sibling's verdict "cannot drive even one matched successor" is
+not supported by its own numbers.** Corrected statement: **a fluidic stage has
+gain > 1 and can drive a successor; the limit is fan-out depth** (≈2–3,
+`[unverified]`). This is a **logical** resolution, not a measured one — see
+`findings-gain.md` §5 for what is ABSENT.
+
+## A correction to the sibling repo that is now owed — not yet landed
+
+`Fluidic Bootstrap Project` concludes, in `src/cascade.py` and its README, that
+fluidic logic **cannot cascade**. That conclusion rests on the inverted Path 2.
+The repo is **frozen at `v1.3`**; correcting its central verdict means editing
+`src/cascade.py` (including its `check()`), the README and `BUILDERS-NOTES.md`,
+and tagging `v1.4`. **That edit is deliberate and scoped, and is the next
+substantive action** — it is a change to a *verdict*, not a claim, so it should
+not be slipped in.
 
 ## Known limitations
 
