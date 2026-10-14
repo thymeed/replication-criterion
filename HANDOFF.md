@@ -89,16 +89,17 @@ in with plausible numbers.**
 2. **Close the generator hole** — soft-iron cores and winding insulation
    (`findings-power.md` §5 items 4 and 8). This decides whether the generator
    survives at all.
-3. **The cross-repo correction** — flagged and pending, below.
+3. **The cross-repo correction** — **landed** (`Fluidic Bootstrap Project`
+   `004585d`, tag `v1.2`), below.
 4. Optionally: the mobility leg, currently open.
 
-## Downstream consequence — flagged, not done
+## Downstream consequence — landed
 
-`copy-fidelity/findings-optics.md` §4 confirms the **third correction to
-`Conclusion A.md`** in `Fluidic Bootstrap Project`: the three-plate method is a
+The **third correction to `Conclusion A.md`** in `Fluidic Bootstrap Project`
+has landed: commit `004585d`, tag **`v1.2`**. The three-plate method is a
 **rediscovery** of the optics three-flat test, and its error-resetting is
-**conditional**, not automatic. That is a write to a **tagged, frozen** repo and
-needs a deliberate decision.
+**conditional**, not automatic. Verified in `copy-fidelity/findings-optics.md`
+§4.
 
 ## Continuation records
 
