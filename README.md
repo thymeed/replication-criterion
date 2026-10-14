@@ -93,11 +93,11 @@ ABSENT lists.
   wall is specific to fluidics, not to non-semiconductor control.
 - **And the cascade verdict itself was inverted.** `findings-gain.md` shows the
   sibling read a **required** control fraction (0.10–0.51) as an **available**
-  gain. The gain is the reciprocal, **≈2–10 — above parity.** Fluidic logic
-  **can** drive a successor; the real limit is **fan-out depth** (≈2–3,
-  `[unverified]`). The mechanism statement (*a weak stream deflects a stronger
-  one*) and FLODAC (1964, an all-fluidic digital computer) both confirm the
-  direction.
+  gain. Belsterling's *Fluidic Systems Design* (1971) — read directly — defines a
+  **digital** fluidic amplifier's gain as the *reciprocal* of exactly that ratio,
+  and notes it can be **infinite** for a latching element. The gain is therefore
+  **≈2–10**, and the real limit is **fan-out depth** — with **fan-out of 3 a
+  worked design case** in the same text.
 
 ## Rights
 

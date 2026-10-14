@@ -117,15 +117,18 @@ been investigated directly, and the result is in
 
 **So the sibling's verdict — "a single fluidic stage cannot drive even one
 matched successor" — is not supported by its own numbers.** The revised, honest
-statement is: **a fluidic stage has gain > 1 and can drive a successor; the real
-constraint is fan-out depth**, reported as shallow (≈2–3, `[unverified]` — no
-figure verified to primary text).
+statement is: **a fluidic stage has gain above 1 and can drive a successor; the
+real constraint is fan-out depth** — and this is now **primary-sourced**:
+Belsterling, *Fluidic Systems Design* (1971), read directly, defines a digital
+fluidic amplifier's gain as the reciprocal of the required control ratio ("can be
+infinite if it has negligible hysteresis") and works "**three parallel
+flip-flops**" as a fan-out case. See `findings-gain.md` §2.
 
-**Caveat carried forward:** this is a **logical** resolution of the sibling's own
-arithmetic, corroborated by one authoritative sentence and an existence proof. It
-is **not** a measured gain figure, and the definitive answer remains the Rung-1
-measurement or a fluidics textbook's fan-out number. `findings-gain.md` §4 lists
-what would close it; §5 lists what is ABSENT.
+**Caveat carried forward:** this settles the *logic* of the sibling's arithmetic
+and its fan-out example, on a primary text. It is **not** a measured gain figure
+for a wall-attachment element, and no numeric fan-out *limit* was found. The
+Rung-1 measurement remains the definitive step. `findings-gain.md` §4 lists what
+would close it; §5 lists what is ABSENT.
 
 ---
 

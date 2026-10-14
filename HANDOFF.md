@@ -55,6 +55,23 @@ subsystem that makes it a machine.
   element, not to non-semiconductor control** — and the sibling's "fluidics is the
   only candidate" claim is **too strong**.
 
+**The gain leg (`findings-gain.md`) — the sibling's central verdict was an
+inversion, now resolved at primary-source strength:**
+
+- The sibling read `J_c/J_p` (0.10–0.51) as a gain short of parity. **Belsterling,
+  *Fluidic Systems Design* (1971), read directly, defines a digital fluidic
+  amplifier's gain as the *reciprocal* of exactly that ratio** — "the change in
+  output pressure to the change in control pressure required for switching" — and
+  notes it "can be infinite if it has negligible hysteresis".
+- **Fan-out of three is a worked design case** in the same text (§7.3, "Matching a
+  Digital Amplifier with Three Parallel Flip-Flops"), with matching shown to be a
+  routine procedure. A numeric fan-out *limit* was **not** found.
+- **Revised: a fluidic stage CAN drive a successor; the limit is shallow
+  fan-out.** Still not a measured gain for a wall-attachment element — the Rung-1
+  measurement remains the definitive step.
+- **This was carried back**: `Fluidic Bootstrap Project` is corrected at tag
+  **`v1.4`**.
+
 ## Decisions made — do not re-litigate
 
 - **One criterion, not two.** "Data center" and "reactor" name the same failure.
@@ -101,11 +118,17 @@ fluidics or relays.
 
 ## Next step
 
-1. **Settle the `J_c/J_p` question** — the highest-value item; it may flip the
-   verdict. Read a fluidic amplifier's gain definition, or run Rung 1.
-2. **Raise both legs' evidence tier** to primary sources.
-3. **Close the generator hole** — soft-iron cores and winding insulation.
-4. Optionally: the mobility leg, currently open.
+1. **The Rung-1 measurement** — build one wall-attachment element, measure its
+   pressure and flow gain. Physical; cannot be done in-repo. This is now the only
+   substantive open item, and it is small.
+2. **Raise both encyclopedia-tier legs to primary sources** where feasible.
+3. Optionally: the mobility leg, currently open.
+
+## Publishing
+
+All four repos push to **private** GitHub repositories under `thymeed` on the
+user's instruction. They are pushed **separately** (not as one monorepo), because
+`closure-audit`'s credibility rests on its own pre-registered commit history.
 
 ## Continuation records
 
