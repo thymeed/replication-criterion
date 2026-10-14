@@ -1,0 +1,24 @@
+# No source documents are ever committed here, and none are kept here.
+#
+# This repository holds original analysis only. Cited works are referenced by
+# name and DOI/URL in the analysis and are never redistributed, extracted, or
+# cached on disk.
+
+*.pdf
+*.docx
+*.epub
+*.txt.orig
+
+# Working scratch, if any. Never published.
+.cache/
+
+# Working scratch from the research sub-agent: contains retrieved third-party
+# source text (encyclopaedia extracts) used only for evidence-tagging during the
+# power leg. Must not be committed, per NOTICE.md ("sources are cited, never
+# held"). The published artifact is findings-power.md at the repository root.
+_research/
+
+# OS noise
+Thumbs.db
+.DS_Store
+desktop.ini
