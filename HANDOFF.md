@@ -1,20 +1,21 @@
 # Handoff — Replication Criterion — 2026-10-14
 
-- **State:** **first pass complete.** The criterion is fixed, applied across the
-  three sibling repos, and the one leg none of them covered — **power** — has
-  been investigated. The result is a negative-leaning answer about electricity
-  and a positive one about shaft power.
-- **Landed:** this session's first commits: `protocol.md`, `audit.md`,
-  `findings-power.md`, `NOTICE.md`, `LICENSE`, `.gitignore`, `README.md`.
-- **Files:** the six documents above. Branch `main`, no remote (matches siblings).
-- **Blockers:** none.
+- **State:** **three of four legs investigated.** The criterion is fixed, applied
+  across the three sibling repos, and the two legs no sibling covered — **power**
+  and **control (relay logic)** — have been run. Both produced corrections to the
+  sibling study.
+- **Files:** `protocol.md`, `audit.md`, `findings-power.md`,
+  `findings-control.md`, `NOTICE.md`, `LICENSE`, `.gitignore`, `README.md`.
+  Branch `main`, no remote (matches siblings).
+- **Blockers:** none. Both new legs are **encyclopaedia-tier** evidence (see
+  below) — that is the main limitation to carry forward.
 
 ## What this repository concluded
 
 The study is named for a dichotomy — *if it needs a data center or a reactor, it
-is not self-replicating* — and one half of it (the reactor) had never been
-investigated by any sibling repo. `audit.md` shows the three existing repos are
-**legs of one argument**; this repo adds the missing fourth.
+is not self-replicating* — and **one half of it had never been investigated** by
+any sibling repo. `audit.md` shows the three existing repos are **legs of one
+argument**; this repo adds the missing legs.
 
 **The criterion (`protocol.md` §3):** M is self-replicating iff its critical
 subsystems (control, power conversion, structure/tooling) are inside C(K, E) —
@@ -22,92 +23,84 @@ the productive closure given a named bootstrap kit K. Mass closure is the wrong
 measure: a study can report 90–96% mass closure while excluding 100% of the
 subsystem that makes it a machine.
 
-**The power leg (`findings-power.md`) — the result:**
+**The power leg (`findings-power.md`):**
 
 - **Condemned by the data-center rule:** every route that turns heat or light
-  *directly* into electricity at the point of use. A photovoltaic cell **is** a
-  doped p–n junction semiconductor device; thermoelectrics are worse. So
-  "needs a reactor" and "needs a data center" **are one dependency** for that
-  family.
-- **The generator survives, and that is the leg's key finding.** A **self-excited
-  dynamo needs no permanent magnet** — it self-starts from residual magnetism in
-  its own iron core. The magnet boundary therefore does **not** automatically
-  condemn it. The hole is **soft-iron cores** (sibling result: outside the
-  closure) and **winding insulation** (ABSENT from the sources).
-- **Prime movers survive and are documented:** Newcomen steam (copper/lead/iron
-  boiler, brass/iron cylinder, leather + water seal), Watt (needed Wilkinson's
-  1774 boring machine — **precision generated, not inherited**), high-pressure
-  steam (Trevithick/Evans — the mobility precedent), Stirling/hot-air, **water
-  wheels** (strongest single candidate), windmills. All built from in-closure
-  materials with hand-generated precision.
-- **Mobile vs stationary — the finding the criterion was built for:** a
-  **stationary** replicator sited on a watercourse or woodlot is not condemned; a
-  **mobile** one is **not shown to meet the criterion**, because mobility forces
-  a carried store, and the only in-closure-ish chemistries are the Voltaic pile
-  (primary) and lead–acid (feedstock unresolved). *(The recommendation is an
-  inference, marked as such.)*
-- **Prior literature:** "energy closure" is a **named** requirement (Freitas &
-  Merkle 2004, Ch. 5 §5.6, read directly) — and every early proposal satisfies it
-  with industrial PV, nuclear, or grid electricity. **ABSENT: any EROI /
-  bootstrap-energy / net-energy calculation for a self-replicating machine.**
+  *directly* into electricity at the point of use — **PV is a doped p–n junction
+  semiconductor device**. So "needs a reactor" and "needs a data center" are one
+  dependency *for that family*.
+- **The generator survives:** a **self-excited dynamo needs no permanent magnet**,
+  building its field from residual magnetism in its own iron. The hole is
+  **soft-iron cores** and **winding insulation**, plus a first-excitation
+  bootstrap gap.
+- **Prime movers survive:** Newcomen and Watt steam, high-pressure steam,
+  Stirling, **water wheels** (strongest), windmills — all documented as built from
+  in-closure materials with hand-generated precision.
+- **Stationary is not condemned; mobile is not shown to work** (mobility forces a
+  carried energy store, and the in-closure chemistries are unresolved).
 
-**The headline, adjusted by evidence (`findings-power.md` §6):** the
-pre-leg hypothesis that power fails *before* the cascade wall is **not
-established**. The generator's magnet problem dissolves; the residual hole is
-materials, not principle. So **the best-evidenced binding constraint remains the
-one the sibling repo named — cascade gain, in the control leg, not power.**
+**The control leg (`findings-control.md`) — the surprise:**
+
+- **Relay logic composes, and the sibling dismissed it too fast.** A relay's
+  per-stage gain is **> 1 by architecture** (coil in one circuit, contacts in a
+  separate circuit with its own supply; one signal drives several circuits), and
+  the historical record shows relays cascading for ninety years (telegraph
+  repeaters 1840; Strowger 1891; crossbar relay sets; Zuse's Z3, 2,600 relays,
+  Turing-complete).
+- **The materials premise of the dismissal fails.** A relay needs only an
+  electromagnet, not a permanent magnet; wrought iron is documented as usable for
+  temporary magnets; Sturgeon (1824/25) and Henry (1830+) built working
+  electromagnets from iron, varnished iron, bare copper and silk.
+- **Therefore the fluidic cascade wall (0.30 vs ≥1.0) is specific to the fluidic
+  element, not to non-semiconductor control** — and the sibling's "fluidics is the
+  only candidate" claim is **too strong**.
 
 ## Decisions made — do not re-litigate
 
-- **One criterion, not two.** "Data center" and "reactor" name the same failure:
-  dependency on infrastructure the machine cannot reach.
+- **One criterion, not two.** "Data center" and "reactor" name the same failure.
 - **K is fixed before the evidence** (`protocol.md` §8): the pre-industrial
   closure. Moving K to get a preferred answer is the named hazard.
-- **A human operator is part of K, not a subsystem of M** (§7). Consequence
-  stated plainly rather than hidden.
-- **No simulation** (`protocol.md` §11), inheriting the sibling rule.
-- **Rights: cite, never hold.** No source PDFs, no extractions, no figures, no
+- **A human operator is part of K, not a subsystem of M** (§7).
+- **No simulation** (`protocol.md` §11).
+- **Rights: cite, never held.** No source PDFs, no extractions, no figures, no
   passage longer than a short phrase.
 
-## Known limitations — the weakest tier in the study
+## Open question that could flip the study's verdict — do not smooth it over
 
-`findings-power.md` §0 says it first: this leg is **weaker-evidenced than the
-others.** Its principal sources are **encyclopaedia texts** (tertiary) plus one
-**primary** (KSRM §5.6). The `[verified]` tag means "read this source's own
-text," not "checked its citations." Where a claim rests on an encyclopaedia's
-summary of a primary paper (Moore 1956, NASA CP-2255, Lackner & Wendt 1995) it is
-tagged `[unverified]`. **Ten ABSENT items are listed in §5 and must not be filled
-in with plausible numbers.**
+`audit.md` §"A tension that must be reconciled" records it: the sibling reads its
+momentum ratio `J_c/J_p` (0.10–0.51) as evidence a stage **cannot reach parity**,
+but that ratio is the **required control-to-power ratio**; in a bistable element
+the output is the *deflected power jet*, which implies a device **gain of ~2–5**.
+Wikipedia *Fluidics* says fluidic amplifiers "have gain", the opposite of the
+sibling's conclusion. **Device gain vs. system cascade margin under fan-out** may
+reconcile them (3-way fan-out at 0.2–0.5 each needs 0.6–1.5× the power jet, so it
+is marginal even if 1-way is fine) — but this is **flagged, not settled**, and
+settling it needs a fluidic amplifier gain definition or the Rung-1 measurement.
 
-**Re-verify first (§2.2 and §4) if this leg is to reach the tier of
-`copy-fidelity`'s Crossref-grade verification.**
+## Known limitations
+
+`findings-power.md` §0 and `findings-control.md` §0 say it first: both legs rest
+on **encyclopaedia-tier** sources (one primary in the power leg: KSRM §5.6). The
+`[verified]` tag means "read this source's own text," not "checked its citations."
+Each leg lists an explicit **ABSENT** list (§5) that must not be filled with
+plausible numbers. Neither leg found a **published numeric gain figure** — for
+fluidics or relays.
 
 ## Next step
 
-1. **Raise the power leg's evidence tier** — §2.2 (dynamo) and §4 (prior
-   literature) against primary sources.
-2. **Close the generator hole** — soft-iron cores and winding insulation
-   (`findings-power.md` §5 items 4 and 8). This decides whether the generator
-   survives at all.
-3. **The cross-repo correction** — **landed** (`Fluidic Bootstrap Project`
-   `004585d`, tag `v1.2`), below.
+1. **Settle the `J_c/J_p` question** — the highest-value item; it may flip the
+   verdict. Read a fluidic amplifier's gain definition, or run Rung 1.
+2. **Raise both legs' evidence tier** to primary sources.
+3. **Close the generator hole** — soft-iron cores and winding insulation.
 4. Optionally: the mobility leg, currently open.
-
-## Downstream consequence — landed
-
-The **third correction to `Conclusion A.md`** in `Fluidic Bootstrap Project`
-has landed: commit `004585d`, tag **`v1.2`**. The three-plate method is a
-**rediscovery** of the optics three-flat test, and its error-resetting is
-**conditional**, not automatic. Verified in `copy-fidelity/findings-optics.md`
-§4.
 
 ## Continuation records
 
-- Nothing running. No remote; do not push.
-- Sibling repos: `Fluidic Bootstrap Project` (frozen, `v1.1`), `closure-audit`
+- Nothing running. No remote; do not push without instruction.
+- Sibling repos: `Fluidic Bootstrap Project` (frozen, `v1.3`), `closure-audit`
   (closed, `3645f28`), `copy-fidelity` (verification pass complete).
-- This session also removed extracted paper text that had leaked into harness
-  scratch state (`.codewhale` transcripts), because the project rule is that
-  sources are cited, never held on disk.
+- **Sources are cited, never held.** Two sessions of cleanup removed fetched
+  paper/article text that had leaked into harness scratch and transcript state
+  (`.codewhale`), which is gitignored but was still on disk.
 - **Refresh live state before acting:** `git log --oneline -5`, `git status`.
   This note is orientation, not authority.

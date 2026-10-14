@@ -3,7 +3,7 @@
 ## What this repository publishes
 
 Original analysis: a criterion, an audit that applies it, and the findings of
-the power leg. Nothing else.
+the power and control legs. Nothing else.
 
 ## What it deliberately does not publish
 
@@ -17,6 +17,17 @@ the power leg. Nothing else.
 Where a source's exact wording *is* the evidence — a stated condition of
 convergence, or the name a source gives to a quantity — the shortest clause that
 carries the claim is quoted, in quotation marks, with attribution.
+
+**The one exception, and why it is principled rather than convenient.** The two
+legs added on 2026-10-14 (`findings-power.md`, `findings-control.md`) rest on
+**encyclopaedia text**, chiefly Wikipedia, which is licensed **CC BY-SA** — free
+to reuse *with attribution*. Quoting it at sentence length is expressly
+permitted by its licence, so those two documents quote it more fully than the
+short-phrase rule would allow for a **restricted** source, and every quotation is
+attributed in place. The rule above binds restricted sources; for CC-licensed
+sources, attribution is the condition and it is met. This distinction is stated
+because otherwise the repo would be quietly breaking its own stated rule, which
+is exactly the kind of thing this project corrects elsewhere.
 
 Nothing is held on disk either: no `References/` folder, no cached copies, no
 extractions.

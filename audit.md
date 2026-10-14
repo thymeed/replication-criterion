@@ -67,6 +67,56 @@ on the numbers available. The single falsifier is stated in the repo and repeate
 here: **one measured wall-attachment gain above ~3 reopens the leg.** No such
 figure exists in any of the nine works the repo reviewed.
 
+### The challenge to the dismissal — tested, and it partly succeeds
+
+That repo dismissed **relay logic** in one line: ruled out by "contact and magnet
+materials." That line is load-bearing — it is what makes fluidics *the only*
+candidate — so it was tested directly. See
+[`findings-control.md`](findings-control.md). The result, stated plainly:
+
+- **The materials premise does not hold.** A relay needs only an
+  **electromagnet**, not a permanent magnet; wrought iron is documented as usable
+  for temporary magnets; and Sturgeon (1824/25) and Henry (1830+) built working
+  electromagnets from iron, varnished iron, bare copper and silk — all inside the
+  closure. So "soft-iron cores are more difficult without industrial
+  metallurgy" is **not supported**.
+- **The cascade wall is fluidic-specific, not general.** Relay per-stage gain is
+  **> 1 by architecture** — a coil in one circuit moves contacts in a *separate*
+  circuit with its own supply, and one signal can drive several circuits. Relays
+  cascaded in production for ninety years (telegraph repeaters 1840; Strowger's
+  exchange 1891; crossbar relay sets; Zuse's Z3, 2,600 relays, Turing-complete).
+  **The 0.30 flow-gain shortfall is a property of the fluidic element, not of
+  non-semiconductor control.**
+
+**If that holds, the study's headline changes.** The binding constraint would
+move off fluidic cascade gain and onto the relay leg's own costs — first
+excitation of the generator, DC contact arcing, low-current contact filming, and
+speed/life — **none of which is quantified yet**. It would also make the
+sibling's "fluidics is the only candidate" claim too strong.
+
+### A tension that must be reconciled, not smoothed over
+
+The relay leg surfaced a **potential problem in the sibling's core number**, and
+it is recorded here rather than resolved:
+
+- The sibling reads its momentum ratio `J_c/J_p = (p_c/p_p)·(b_c/w)` = 0.10–0.51
+  as evidence that *a stage cannot reach parity* — i.e. it treats the **required
+  control-to-power ratio** as if it were the **available gain**.
+- But in a bistable wall-attachment element the **output** is the deflected power
+  jet, so a control that switches at 0.2–0.5 of the power jet implies a device
+  **gain of roughly 1/0.5 to 1/0.2 = 2 to 5** — above 1, not below it.
+- Wikipedia's *Fluidics* article states flatly that fluidic amplifiers "have
+  gain" (a weak control stream deflects a stronger one), which is exactly the
+  opposite of the sibling's conclusion.
+
+**These may be reconcilable** — device gain vs. *system cascade margin under
+fan-out* are different quantities, and feeding three successors at 0.2–0.5 each
+would need 0.6–1.5× the power jet, so 3-way fan-out is marginal even if 1-way is
+comfortable. But they read as contradictory, and the difference is exactly the
+crux. **This is an open question that could flip the study's central verdict, and
+it is flagged, not settled.** Settling it needs a careful reading of a fluidic
+amplifier's gain definition, or the Rung-1 measurement.
+
 ---
 
 ## Leg 2 — Precision: making the geometry, not inheriting it
@@ -164,25 +214,51 @@ Apply the criterion (`protocol.md` §3) with K = the pre-industrial closure
 - **Precision — inside, conditionally.** The three-plate process is in K
   (abrasive + three rough plates + labour), *if* its error-limiting behaviour
   transfers from measuring to making. That is leg 2, and it is open.
-- **Control — the only inside candidate is fluidic, and it is blocked.** Leg 1.
+- **Control — the only inside candidate is fluidic, and it is blocked.** Leg 1 —
+  though relay logic is a second in-closure candidate whose dismissal does not
+  survive testing (Leg 1, "The challenge to the dismissal").
 - **Power — undetermined.** Leg 3.
 
 **The verdict this repository can state today:**
 
-> **No demonstrated machine meets the criterion, and the study was named for a
-> dichotomy whose second half had never been investigated.** The sibling repo
-> named **cascade gain** as the binding constraint — but the criterion suggests
-> the power leg may fail *before* the cascade wall is reached, because the
-> materials boundary that condemns magnets also condemns the generator, exactly
-> as it condemns the data center.
+> **No demonstrated machine meets the criterion.** Every leg resolves the same
+> way: the in-closure candidates exist and are real, and each one stops at an
+> **unquantified** cost rather than at a demonstrated impossibility.
 
-That is a testable claim, and it is what leg 3 exists to settle. If it holds, the
-study's headline changes: the binding constraint is not cascade gain, and not
-labour — it is that **the same materials boundary blocks both halves of the
-dichotomy**, control and power together.
+| Leg | In-closure candidate | Where it stops |
+|---|---|---|
+| Precision | three-plate generation | the measure→make transfer, untested |
+| Control | fluidic logic; **relay logic** | cascade gain (fluidic); relay costs unquantified |
+| Power | combustion / water / wind + self-excited dynamo | first excitation; soft-iron cores; insulation |
+| Disclosure | — | the literature discloses; nobody demonstrates the brain being made |
 
-If it does not hold — if some converter is built entirely from K — then the
-control leg is the binding constraint after all, and leg 1's falsifier is the
-thing to chase.
+**Three findings changed the picture, and each was a leg that did not exist
+before this repository or the session that built it:**
 
-Either way, the answer requires leg 3, and until now leg 3 did not exist.
+1. **The reactor half had never been investigated** — this repository's reason to
+   exist. Its result: direct heat/light→electricity conversion is condemned by
+   the *same* rule as the data center (those converters **are** semiconductors),
+   but **shaft power and the self-excited dynamo survive** — a dynamo needs no
+   permanent magnet. So the two disqualifiers collapse into one *for that family*,
+   not globally.
+2. **The power leg did not fail before the cascade wall**, contrary to the
+   hypothesis this synthesis first advanced. The generator's magnet problem
+   dissolves; the residual hole is materials and a first-excitation bootstrap,
+   not principle.
+3. **The control leg's "only candidate" claim does not survive testing** — relay
+   logic composes (>1 by architecture) and its materials are in-closure, so the
+   cascade wall is specific to the fluidic element.
+
+**So the binding constraint is still not settled, and the study is honest about
+that.** Two candidates compete for it, and both are blocked on *measurement, not
+argument*: the fluidic **cascade gain** (the sibling's number, whose
+interpretation leg 1 now questions), and the relay leg's **unquantified costs**.
+Resolving it requires the one measurement the sibling repo has always
+named — a wall-attachment gain figure — and now, additionally, a period relay's
+gain and contact life.
+
+**What this repository can say with confidence:** the study's original
+one-line dismissal of relays was too fast, its "fluidics is the only candidate"
+claim is too strong, and the reactor half of its own name had never been looked
+at. Those are corrections, and they are the honest output of four legs that
+mostly produced *bounds and gaps* rather than a verdict.

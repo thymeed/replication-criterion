@@ -59,22 +59,38 @@ the cascade wall the sibling repo named.** That is a testable claim. See
 ## Documents
 
 ```
-protocol.md      the criterion, pre-registered: the formal statement, the
-                 operational definitions of "data center" and "reactor", the
-                 bootstrap kit K, and the falsifiers
-audit.md         the criterion applied across the three sibling repos: the
-                 four-leg map, and the synthesis
-findings-power.md  the power leg: which prime movers sit inside the closure,
-                 which are condemned, and the mobile-vs-stationary finding
-NOTICE.md        sources, rights, and the evidence rule
+protocol.md          the criterion, pre-registered: the formal statement, the
+                     operational definitions of "data center" and "reactor", the
+                     bootstrap kit K, and the falsifiers
+audit.md             the criterion applied across the three sibling repos: the
+                     four-leg map, and the synthesis
+findings-power.md    the power leg: which prime movers sit inside the closure,
+                     which are condemned, and the mobile-vs-stationary finding
+findings-control.md  the control leg: does relay logic compose, and can it be
+                     built in-closure? (it can, on the evidence found)
+NOTICE.md            sources, rights, and the evidence rule
 ```
 
 ## Status
 
-**In progress.** The criterion is fixed (`protocol.md` v0.1). The cross-repo
-audit is written (`audit.md`). The power leg is being investigated
-(`findings-power.md`) — and where the literature is silent, it will say so rather
-than estimate.
+**Three of four legs investigated.** The criterion is fixed (`protocol.md`); the
+cross-repo audit and the legs are written (`audit.md`, `findings-power.md`,
+`findings-control.md`). Where the literature is silent, each says so rather than
+estimating — `findings-power.md` §5 and `findings-control.md` §5 are the explicit
+ABSENT lists.
+
+**Two results worth the reader's time, both corrections to the sibling study:**
+
+- **The reactor half of the study's own name had never been investigated.**
+  Result: direct heat/light→electricity conversion is condemned by the same rule
+  as the data center, but **combustion, water and wind prime movers survive**, and
+  a **self-excited dynamo needs no permanent magnet**. A **stationary** replicator
+  is not condemned; a **mobile** one is not shown to work.
+- **Relay logic was dismissed too fast.** It **composes** — per-stage gain > 1 by
+  architecture — and its materials sit inside the closure, so the fluidic cascade
+  wall is specific to fluidics, not to non-semiconductor control. This also
+  surfaces a **tension in the sibling's central number** that could flip the
+  study's verdict: see `audit.md` §"A tension that must be reconciled".
 
 ## Rights
 
