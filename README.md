@@ -37,10 +37,11 @@ different measure is needed, and this is it.
   only control substrate wholly inside a pre-industrial materials closure. It
   then hits a quantified wall: cascade gain ~0.30 against a needed ≥1.0
   (`Fluidic Bootstrap Project`).
-- **Precision can be generated, not inherited**: the three-plate method, but
-  the sibling `copy-fidelity` suspects it is a rediscovery of the optics
-  three-flat test, and whether the effect transfers from *measuring* to *making*
-  is open.
+- **Precision can be generated, not inherited**: the three-plate method, which the
+  sibling `copy-fidelity` has now confirmed is a rediscovery of the optics
+  three-flat test, and has resolved the measuring-to-making transfer for: the
+  effect is **real but conditional on how the process is run**, and it resets the
+  workpiece, not the machine (`copy-fidelity/findings-transfer.md`).
 - **The literature discloses its boundaries** and **nobody demonstrates the brain
   being made** (`closure-audit`, closed 2026-10-14).
 
@@ -73,15 +74,22 @@ findings-gain.md     the gain leg: is the sibling's cascade verdict an inversion
 NOTICE.md            sources, rights, and the evidence rule
 ```
 
+Leg 2 (precision) has no file here: it is the sibling `copy-fidelity`,
+`findings-transfer.md`. This repository's `audit.md` Leg 2 summarizes it.
+
 ## Status
 
-**Three of four legs investigated.** The criterion is fixed (`protocol.md`); the
-cross-repo audit and the legs are written (`audit.md`, `findings-power.md`,
-`findings-control.md`). Where the literature is silent, each says so rather than
-estimating, `findings-power.md` §5 and `findings-control.md` §5 are the explicit
-ABSENT lists.
+**All four legs investigated, and every one resolves the same way.** The criterion
+is fixed (`protocol.md`); the cross-repo audit and the three legs that live here
+are written (`audit.md`, `findings-power.md`, `findings-control.md`,
+`findings-gain.md`). Where the literature is silent, each says so rather than
+estimating; the explicit ABSENT lists are `findings-power.md` §5 and
+`findings-control.md` §5.
 
-**Two results worth the reader's time, both corrections to the sibling study:**
+**The result, in one line:** every leg ends at an **unmeasured quantity**, not at a
+demonstrated impossibility. That is the honest shape of the study.
+
+**Three results worth the reader's time, all corrections to the sibling study:**
 
 - **The reactor half of the study's own name had never been investigated.**
   Result: direct heat/light→electricity conversion is condemned by the same rule

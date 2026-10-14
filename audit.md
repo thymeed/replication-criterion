@@ -151,9 +151,29 @@ literature**. The open question it defines is precise:
 > material removed, a new object produced. **Whether the error-limiting
 > behaviour survives the move from measuring to making is the question.**
 
-**Status: live, unstarted at the time of writing.** Five optics citations were
-`[unverified]` leads and must be checked against primary text before any claim
-rests on them. That verification is the first analysis step in this leg.
+**Status, updated 2026-10-14: the leg has since run, and it answers the question
+partly and conditionally.** See the sibling `copy-fidelity`, `findings-transfer.md`.
+The result, in its terms:
+
+- **The mechanism holds.** Over rigid profiles, the only triple where all three
+  pairwise mate is the flat triple, checked by brute force rather than cited.
+- **The effect is conditional, in two independent literatures.** Optics finds the
+  reconstruction's error amplification depends on the rotation schedule and can be
+  minimised by choosing it; manufacture finds the three-workpiece configuration
+  converges to flatness only if the pairing schedule is planned (Sakai, Tanaka &
+  Ido 1976, whose registered Japanese title is "three-surface lapping"). Same
+  structure in both fields: the effect is real and contingent on how the process
+  is run.
+- **But the generational question is unanswered, and now precisely so.** The
+  process acts on the **reference surface** (the sibling's Channel A) and resets
+  it; it does not act on the **machine's own geometry** (Channel B), which
+  accumulates independently. A lineage survives only if A resets faster than B
+  grows, and **neither rate has been measured by anyone.**
+
+So precision is **inside C(K, E) conditionally**: the flatness of the surfaces the
+process touches can be regenerated, and the machine's own geometry cannot be reset
+by that process. That is enough for this leg to stand on and short of what the
+sibling claim asserted.
 
 **Why this leg is load-bearing for leg 3.** Every surviving power candidate,
 boiler, turbine, wheel, generator, needs bearings, seals and fits. If precision
@@ -224,9 +244,13 @@ Apply the criterion (`protocol.md` §3) with K = the pre-industrial closure
 
 - **Structure and tooling: inside.** Iron, steel, copper, brass, glass, clay,
   wood are all in K.
-- **Precision: inside, conditionally.** The three-plate process is in K
-  (abrasive + three rough plates + labour), *if* its error-limiting behaviour
-  transfers from measuring to making. That is leg 2, and it is open.
+- **Precision: inside, conditionally, and now tested.** The three-plate process is
+  in K (abrasive + three rough plates + labour), and the sibling's analysis
+  (`findings-transfer.md`) has now resolved the transfer question: the effect is
+  **real but conditional on how the process is run**, it resets the reference
+  surface, and it **does not reset the machine's own geometry**. The residual gap
+  is a measurement of two rates, not a question of principle. That is leg 2,
+  closed.
 - **Control: two in-closure candidates, not one.** Leg 1 tested the sibling's
   dismissal of relay logic (it does not survive) and its cascade verdict (it is
   an **inversion** of its own number, see `findings-gain.md`). Fluidic logic
@@ -241,12 +265,12 @@ Apply the criterion (`protocol.md` §3) with K = the pre-industrial closure
 
 | Leg | In-closure candidate | Where it stops |
 |---|---|---|
-| Precision | three-plate generation | the measure→make transfer, untested |
+| Precision | three-plate generation | **conditional** on process schedule; resets the workpiece, not the machine |
 | Control | fluidic logic; relay logic | fluidic **fan-out depth**; relay costs unquantified |
 | Power | combustion / water / wind + self-excited dynamo | first excitation; soft-iron cores; insulation |
 | Disclosure | n/a | the literature discloses; nobody demonstrates the brain being made |
 
-**Four findings changed the picture:**
+**Four findings changed the picture, and a fifth closed a leg:**
 
 1. **The reactor half had never been investigated**: this repository's reason to
    exist. Its result: direct heat/light→electricity conversion is condemned by
@@ -265,13 +289,20 @@ Apply the criterion (`protocol.md` §3) with K = the pre-industrial closure
    gain**, inverting it. On its own numbers the momentum gain is ≈2–10, **above**
    parity. The mechanism statement (a weak stream deflects a stronger one) and
    FLODAC (1964) both confirm the direction.
+5. **The precision leg closed, in the same shape as the others.** The sibling's
+   transfer analysis (`copy-fidelity/findings-transfer.md`) finds the three-plate
+   effect **real but conditional on how the process is run** (optics: on the
+   rotation schedule; manufacture: on the pairing schedule), resets the workpiece,
+   and leaves the machine's own geometry untouched. So this leg too ends at an
+   **unmeasured quantity** rather than a wall.
 
 **So the binding constraint has moved, and it is smaller than the study claimed.**
 It is no longer "a fluidic stage cannot drive its successor". It is:
-**fluidic fan-out is shallow** (≈2–3, `[unverified]`), plus the relay leg's
-unquantified costs, plus labour. All three are **quantities to measure**, not
-walls, and the study's original verdict rested on an arithmetic slip. Resolving
-what remains needs the Rung-1 measurement and a fluidics text's fan-out figure.
+**fluidic fan-out is shallow** (fan-out 3 is a documented design case, so this is
+now primary-sourced rather than guessed), plus the relay leg's unquantified
+costs, plus labour. All are **quantities to measure**, not walls, and the study's
+original verdict rested on an arithmetic slip. Resolving what remains needs the
+Rung-1 measurement and a fluidics text's fan-out limit.
 
 **What this repository can say with confidence:** the study's dismissal of
 relays was too fast, its "fluidics is the only candidate" claim is too strong,
