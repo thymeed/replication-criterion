@@ -49,23 +49,22 @@ repo's materials finding says why, in its own terms:
   10.13111/2066-8201.2010.2.4.21): a 2 mm nozzle in a 10 mm channel, R/w = 15–20,
   h/w = 5, 2–6 bar, 2–8 ms switching.
 
-**And then it hits a wall, and the wall is quantified:**
+**And then it hits a wall. The wall is no longer cascade, and the correction
+came from this repository's own gain leg** (`findings-gain.md`):
 
-- **Measured gains:** 0.30 and 0.322 — but these are from **membrane and piston
-  valves**, a *different mechanism*. This is a transfer, not a measurement, and
-  the repo says so.
-- **Derived momentum ratio** `J_c/J_p = (p_c/p_p)·(b_c/w)` = **0.10–0.51**, exact
-  under lossless Bernoulli.
-- **The requirement:** ≥ 1.0 to compose at all; ≥ 3.0 to drive the ~3 successors a
-  practical circuit needs.
-- **Shortfall:** 3.1× against the floor, 9.3× against 3-way fan-out. By two
-  independent arithmetic paths (`src/cascade.py`).
+- **The derived momentum ratio** `J_c/J_p = (p_c/p_p)·(b_c/w)` = **0.10–0.51**, exact
+  under lossless Bernoulli, is the momentum the *control* must supply — so the
+  available gain is its reciprocal, **2–10, above parity**. The sibling read it
+  backwards.
+- **The measured 0.30 and 0.322** are *flow* gain on *membrane valves*, a different
+  mechanism, and flow gain is not the cascade criterion.
+- **So cascade is not the wall.** A fluidic stage **can** drive a successor. The
+  remaining constraint is **fan-out depth** (a handful of successors).
 
-**Status: addressed, wall named, unresolved.** The criterion condemns the data
-center; the closure-compatible replacement is identified; and it cannot cascade
-on the numbers available. The single falsifier is stated in the repo and repeated
-here: **one measured wall-attachment gain above ~3 reopens the leg.** No such
-figure exists in any of the nine works the repo reviewed.
+**Status: addressed, and the verdict corrected in the project's favour.** The
+criterion condemns the data center; the closure-compatible replacement exists, and
+it cascades. What remains open is the *measured* wall-attachment gain (the Rung-1
+measurement) and the fan-out limit, neither of which is a demonstrated obstacle.
 
 ### The challenge to the dismissal — tested, and it partly succeeds
 
@@ -85,16 +84,17 @@ candidate — so it was tested directly. See
   circuit with its own supply, and one signal can drive several circuits. Relays
   cascaded in production for ninety years (telegraph repeaters 1840; Strowger's
   exchange 1891; crossbar relay sets; Zuse's Z3, 2,600 relays, Turing-complete).
-  **The 0.30 flow-gain shortfall is a property of the fluidic element, not of
-  non-semiconductor control.**
+  **So non-semiconductor control composes; whatever limits the fluidic element does
+  not generalize to control substrates as a class.**
 
-**If that holds, the study's headline changes.** The binding constraint would
-move off fluidic cascade gain and onto the relay leg's own costs — first
-excitation of the generator, DC contact arcing, low-current contact filming, and
-speed/life — **none of which is quantified yet**. It would also make the
-sibling's "fluidics is the only candidate" claim too strong.
+**The study's headline does change**, and the gain leg then confirmed it: the
+binding constraint moves off fluidic cascade (which is not a wall at all, see
+below) and onto the relay leg's own costs — first excitation of the generator, DC
+contact arcing, low-current contact filming, and speed/life — **none of which is
+quantified yet**. It also makes the sibling's "fluidics is the only candidate"
+claim too strong.
 
-### The tension in the sibling's central number — investigated in findings-gain.md, and it resolves against the sibling
+### Why the cascade verdict was wrong, in detail (`findings-gain.md`)
 
 The relay leg surfaced a **problem in the sibling's core number**. It has now
 been investigated directly, and the result is in
