@@ -25,3 +25,6 @@ desktop.ini
 
 # Session handoff. Kept locally on disk, not published.
 HANDOFF.md
+
+# Local agent/tooling state. Never published.
+.codewhale/
