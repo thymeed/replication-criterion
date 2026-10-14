@@ -71,33 +71,19 @@ with shallow fan-out"* — materially different, and much less fatal.
 ### 2.1 The gain definition — `[verified]`, and it is the crux
 
 Charles A. Belsterling, *Fluidic Systems Design* (Wiley, 1971), §4 "Performance
-Parameters", read directly:
+Parameters", read directly. Paraphrased, with the load-bearing clauses quoted:
 
-> "**Pressure gain** is defined as the ratio of the change in output pressure to
-> the change in control pressure, when the fluidic amplifier is operating in a
-> particular circuit (with a particular load). … Since the curve is not linear,
-> the point at which the amplifier operates in a circuit must be specified in
-> calculating a numerical value for pressure gain."
-
-and, for the digital case specifically:
-
-> "In the case of the digital fluidic amplifier, the definition of pressure gain
-> is the ratio of **the change in output pressure to the change in control
-> pressure required for switching to occur**. … It should be recognized that,
-> according to this definition, **the gain of the digital amplifier can be
-> infinite if it has negligible hysteresis.**"
-
-The same section defines two other quantities, which the sibling's Path 1
-conflates:
-
-> "**Pressure Amplification Factor K_p** … the ratio of the change in output
-> pressure to the change in control pressure when the output flow is constant …
-> In effect, this is the maximum pressure gain that an amplifier could deliver if
-> there were no loading effects."
-
-> "**Flow Gain G_f** is defined as the ratio of the change in output flow to the
-> change in control flow, when the fluidic amplifier is operating in a particular
-> circuit (with a particular load)."
+- **Pressure gain** is the ratio of output-pressure change to control-pressure
+  change, measured in a particular circuit with a particular load. Because the
+  transfer curve is not linear, the operating point must be stated or the number
+  means nothing (locator: §4).
+- **For a digital amplifier specifically**, gain is the ratio of output-pressure
+  change to "the change in control pressure required for switching" — and the
+  text adds that this gain "can be infinite if it has negligible hysteresis"
+  (§4). Both clauses are the author's own words and are quoted exactly.
+- It separately defines a **pressure amplification factor** (output change over
+  control change at constant output flow) and a **flow gain** (output-flow change
+  over control-flow change) — three distinct quantities, not one (§4).
 
 **Three consequences, all directly against the sibling's reading:**
 
@@ -105,48 +91,40 @@ conflates:
    sibling's `J_c/J_p` is the *control required*; Belsterling's gain is the
    *output obtained* divided by it. **It is the reciprocal** — so the sibling read
    its own number upside down.
-2. **For a latching (hysteretic) element, that gain is large** — the author's own
-   words are "can be infinite if it has negligible hysteresis", i.e. hysteresis
+2. **For a latching element that gain is large.** The author's own words are that
+   it "can be infinite if it has negligible hysteresis" — so hysteresis
    *helps* gain here, and wall attachment has hysteresis in abundance (§2.2).
 3. **Flow gain is a different quantity.** The 0.30 figure is flow gain; flow gain
-   is not the cascade criterion, and the same text treats pressure gain, pressure
-   amplification factor and flow gain as three separately-defined things.
+   is not the cascade criterion, and the same text keeps pressure gain, pressure
+   amplification factor and flow gain separate.
 
 ### 2.2 Wall attachment latches, so gain is high — `[verified]`
 
 Same text, §4, on the switching characteristic of the digital (wall-attachment)
-element:
+element: the curve shows hysteresis "due to the latching effect of wall
+attachment", so the pressure at which the jet switches differs from the pressure
+at which it reattaches (§4; the one quoted clause is the author's).
 
-> "Note that the curve **exhibits considerable hysteresis due to the latching
-> effect of wall attachment**; that is, the curve of increasing control pressure
-> to the point of switching is different from the curve of decreasing control
-> pressure to the point of reattaching."
-
-This is the mechanism behind the "infinite gain" remark: a bistable element that
+That is the mechanism behind the "infinite gain" remark: a bistable element that
 latches produces a **full output swing that persists** once a small over-threshold
 control has been applied. The sibling's own `--sequential` model implements this
 latching; its cascade arithmetic simply failed to follow it through.
 
 ### 2.3 Fan-out of three is a worked design case — `[verified]`
 
-Same text, §7.3, "Static Matching of Cascaded Fluidic Components" — a subsection
-titled:
-
-> "**Matching a Digital Amplifier with Three Parallel Flip-Flops**"
-
-which works the case in full: "Suppose we are given the task of designing a
-circuit for properly matching a digital amplifier with three parallel-connected
-flip-flops, all of similar design", with the amplifier's effective load "made up
-of the individual input characteristics of the three parallel-connected
-flip-flops, essentially just ⅓ of the impedance of one, determined graphically by
-tripling the flow of one unit at every pressure level."
+Same text, §7.3, "Static Matching of Cascaded Fluidic Components", carries a
+subsection titled "Matching a Digital Amplifier with Three Parallel Flip-Flops"
+and works the case: matching one digital amplifier to three parallel-connected
+flip-flops, with the amplifier's effective load being the combined input
+characteristics of the three (one third the impedance of a single unit, found by
+tripling the flow at each pressure level). *The subsection title is quoted because
+the title itself is the evidence; the body is paraphrased.*
 
 Two points follow:
 
 - **Fan-out 3 is a routine design exercise**, not a limit that makes fluidic
   computation impossible. Its whole point in the text is that **matching is a
-  procedure** — the author's summary is that it "involves a series of compromises
-  based on a thorough understanding of their behavior".
+  procedure**, one the author summarises as a series of compromises.
 - **The text shows the compromise is real**: the case reaches a *mismatch* of
   bias points and operating ranges, and then lists the standard fixes (reduce the
   driver's supply, raise the flip-flops' bias pressure, add series or shunt
@@ -155,16 +133,10 @@ Two points follow:
 
 ### 2.4 Cascade is the designed condition, and gain is defined under load — `[verified]`
 
-Same text, §7.1, on reading a transfer curve:
-
-> "Note that this **defines the pressure gain of the driver amplifier only when
-> it has the driven amplifier as a load**."
-
-and:
-
-> "To determine the sensitivity or gain of coupled fluidic components, the plot
-> of output characteristics of the driving component with the input
-> characteristics of the driven component superimposed must be available."
+Same text, §7.1: gain is defined "only when it has the driven amplifier as a
+load", and computing it requires the output characteristics of the driving
+component laid over the input characteristics of the driven one (§7.1; short
+clause quoted, the rest paraphrased).
 
 Fluidic cascade is, in the primary text, an **ordinary engineering problem with a
 documented method** — compute the loaded transfer curve. It is not a physical
@@ -242,11 +214,12 @@ most.** The word "cannot" was wrong in both the sibling's paths.
 **Read directly (`[verified]`):**
 - **Belsterling, Charles A. (1971), *Fluidic Systems Design*, Wiley** — Internet
   Archive item `BELSTERLINGFluidicSystemsDesign1971`, text derivative fetched and
-  searched locally, then deleted. Quoted: §4 "Performance Parameters" (pressure
-  gain; the digital-amplifier definition; the "infinite … negligible hysteresis"
-  remark; pressure amplification factor K_p; flow gain G_f; the latching
-  hysteresis note), §7.1 (gain defined under load), §7.3 ("Matching a Digital
-  Amplifier with Three Parallel Flip-Flops").
+  searched locally, then deleted. Cited by section: §4 "Performance Parameters"
+  (the pressure-gain definition, the digital-amplifier definition, the "infinite"
+  remark, pressure amplification factor, flow gain, the latching hysteresis note),
+  §7.1 (gain defined under load), §7.3 ("Matching a Digital Amplifier with Three
+  Parallel Flip-Flops"). **Quotations are held to short phrases; the rest is
+  paraphrased, with section locators.**
 - Wikipedia, *Fluidics* — MediaWiki API plain text (the "device has gain" and
   FLODAC statements).
 - Sibling repository source, read in full: `Fluidic Bootstrap Project` —

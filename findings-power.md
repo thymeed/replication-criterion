@@ -206,10 +206,11 @@ as such here.)*
 - **"Energy closure" is a named requirement in the canonical text.** `[verified —
   read the primary text]` Freitas & Merkle, *Kinematic Self-Replicating Machines*
   (2004), Ch. 5 §5.6: three requirements — **matter closure**, **energy closure**
-  ("can the system generate sufficient energy in the proper forms to power the
-  processes of self-construction?"), and **information closure**. The sibling
-  `closure-audit` found the same report defers *information* closure outright;
-  this leg finds the *statement* of energy closure is the same shape.
+  (whether the system can "generate sufficient energy in the proper forms", quoted
+  as the shortest clause carrying the definition; §5.6), and **information
+  closure**. The sibling `closure-audit` found the same report defers
+  *information* closure outright; this leg finds the *statement* of energy closure
+  has the same shape.
 - **The tension to record, not resolve:** that same section argues the U.S.
   factory system is an existence proof of 100% closure — which is a claim **about
   the industrial system as a whole**, i.e. precisely the infrastructure this
