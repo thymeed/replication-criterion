@@ -160,6 +160,12 @@ reactor is a solar or thermoelectric plant.
 - **Voltaic pile: survives as chemistry, condemned as a plant.** `[verified]`
   Copper/zinc discs with brine-soaked separators, 0.76 V per cell, built from
   copper, zinc, cloth and brine. But it is a **primary** (non-rechargeable) cell.
+  On the closure question: the requirement is two dissimilar metals and an
+  electrolyte, and the sibling materials list carries copper, iron, lead and
+  brass. It also carries the zinc *ore*, its brass entry being "calamine process
+  (zinc carbonate + copper)". So the couple is not materials-condemned. The
+  residual step, isolating the anode metal from its ore, is one process step and
+  is **narrowed, not open** (control leg §2.5).
 - **Lead–acid: conditional, feedstock unresolved.** `[verified]` Planté 1859,
   the first rechargeable battery; **35–40 Wh/kg** (the only specific energy
   verified anywhere in this leg). Chemistry is lead / lead dioxide / dilute
@@ -238,20 +244,29 @@ as such here.)*
 2. **ABSENT:** the specific purification route for solar-grade silicon.
 3. **ABSENT:** any efficiency figure for a purely **metallic** thermocouple doing
    useful power conversion.
-4. **ABSENT:** the **insulation/varnish system of early dynamo windings**, and
-   brush/commutator contact materials. **The generator verdict depends on this.**
+4. **NARROWED 2026-10-14:** the **insulation/varnish system of early dynamo
+   windings**, and brush/commutator contact materials. Candidate pre-industrial
+   insulants are documented across this study (shellac and gutta-percha, control
+   leg §6; wood and hemp in the Newcomen train, §2.3). No source measures their
+   performance on a dynamo winding. **The generator verdict still depends on
+   this**, but on a performance number, not on whether an insulant exists.
 5. **ABSENT:** whether **lead and sulfuric acid** can be produced in-closure. No
    assumption made.
 6. **ABSENT:** specific energy of charcoal, wood or any in-closure thermal store,
    so no endurance or mass budget for a mobile in-closure heat engine.
-7. **ABSENT:** measured performance of a self-excited dynamo built with
-   hand-scraped iron cores and no modern insulation.
-8. **ABSENT:** prior EROI/bootstrap-energy literature for replicators; the search
-   was not journal-level.
+7. **PARKED:** measured performance of a self-excited dynamo built with
+   hand-scraped iron cores and no modern insulation. No source in this study
+   measures it, and more literature does not close it. It is a measurement.
+8. **PARKED:** prior EROI/bootstrap-energy literature for replicators; the search
+   was not journal-level. Parked, not chased.
 9. **ABSENT:** performance of an in-closure solar concentrator + heat engine.
-10. **ABSENT / not attempted:** coupling the power leg back to the fluidic control
-    leg, the interface between a ~1 µm-precision fluidic element and a heat
-    engine was not researched at all.
+10. **PARKED:** coupling the power leg back to the fluidic control leg, the
+    interface between a ~1 µm-precision fluidic element and a heat engine, was
+    not researched at all. The question is stated here so it is not lost: a heat
+    engine imposes vibration and thermal cycling on whatever shares its frame,
+    and the fluidic element's channel geometry is its whole specification. No
+    source in this study addresses the pairing, and closing it needs sources the
+    workspace does not hold. Parked, not answered.
 
 ---
 

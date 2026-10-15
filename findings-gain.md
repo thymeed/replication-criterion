@@ -190,8 +190,9 @@ most.** The word "cannot" was wrong in both the sibling's paths.
    curve, but prints no figure for this element. **The Rung-1 measurement
    remains the definitive step**, and the sibling repo's `BUILDERS-NOTES.md`
    already specifies it.
-2. **The FLODAC paper** (FJCC 1964, pp. 631–641) or **US 3,190,554**, for
-   gate-level fan-out from working hardware. Not obtained here (JS-walled).
+2. **PARKED:** **The FLODAC paper** (FJCC 1964, pp. 631–641) or **US
+   3,190,554**, for gate-level fan-out from working hardware. Not obtained here
+   (JavaScript-walled). Paywalled or bot-walled; parked, not chased.
 3. **A fluidics text printing an explicit maximum fan-out number**: none found.
 
 ---
@@ -201,7 +202,7 @@ most.** The word "cannot" was wrong in both the sibling's paths.
 1. **A numeric fan-out *limit*** (the maximum number of successors one element
    can drive). A worked case at 3 exists; a limit does not.
 2. **Any measured wall-attachment gain figure**: pressure, flow or power.
-3. **The FLODAC paper or patent text.**
+3. **PARKED:** the FLODAC paper or patent text. Paywalled or bot-walled; parked.
 4. **Whether Lin et al.'s 0.30 is small-signal flow gain or something else**:
    not re-opened; treated as the sibling summarised it ("30% flow gain").
 5. **An explicit numeric relay/fluidic power-gain comparison.**

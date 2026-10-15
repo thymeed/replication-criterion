@@ -20,6 +20,23 @@ Read together, they are **three legs of one argument**. The fourth leg, power,
 was missing, and the study was named for a dichotomy whose second half nobody had
 investigated. See [`audit.md`](audit.md).
 
+## The study this belongs to
+
+This repository is one of four siblings written against a single question: what
+would it take for a machine to replicate itself with no semiconductor industry
+and no energy industry behind it.
+
+- `Fluidic Bootstrap Project`: can the machine make its own control system?
+- `copy-fidelity`: does copying its own geometry drift, or can precision be
+  regenerated?
+- `closure-audit`: does the literature disclose what its closure figures exclude?
+- this repository: the criterion that decides the question, and the power leg.
+
+**Method, stated because it bounds every claim: literature and arithmetic only.**
+The study ran no laboratory work, and each leg names the one measurement that
+would close it. A workspace-level index of the four repositories is kept locally
+by the author.
+
 ## The criterion, in one paragraph
 
 A machine is self-replicating only if every subsystem whose failure would stop
@@ -34,9 +51,12 @@ different measure is needed, and this is it.
 
 - **The data center is condemned, and there is a real replacement.** Fluidic
   wall-attachment logic needs no contacts, no magnets and no rare metals, the
-  only control substrate wholly inside a pre-industrial materials closure. It
-  then hits a quantified wall: cascade gain ~0.30 against a needed ≥1.0
-  (`Fluidic Bootstrap Project`).
+  only control substrate wholly inside a pre-industrial materials closure. Its
+  cascade verdict was then corrected in the sibling's favour: the first reading
+  inverted its own number, and on that number a stage has gain above parity and
+  can drive a successor. The real limit is **shallow fan-out**, which this
+  repository's `findings-logic.md` now prices (`findings-gain.md`,
+  `findings-control.md`).
 - **Precision can be generated, not inherited**: the three-plate method, which the
   sibling `copy-fidelity` has now confirmed is a rediscovery of the optics
   three-flat test, and has resolved the measuring-to-making transfer for: the
@@ -47,14 +67,14 @@ different measure is needed, and this is it.
 
 ## What this repository adds
 
-**The power leg, and the hypothesis that the two disqualifiers collapse into
-one.** Solar-electric and thermoelectric converters are semiconductor devices,
-so they are condemned by the *same* rule that condemns the data center.
-Electromagnetic generation wants magnets, condemned by the *same* materials
-boundary. If both hold, the criterion leaves only converters with no
-semiconductor and no magnet (combustion, wind, water, and generators are the
-pinch point), and **the binding constraint is a shared materials boundary, not
-the cascade wall the sibling repo named.** That is a testable claim. See
+**The power leg.** It tested a hypothesis carried in from the cross-repo audit:
+that the two disqualifiers collapse into one, because the materials boundary that
+condemns magnets also condemns the generator. The leg partly refutes it. Direct
+heat-to-electricity and light-to-electricity conversion is condemned by the
+data-center rule, so "needs a reactor" collapses into "needs a data center" for
+that family. But the self-excited dynamo needs **no permanent magnet**, so the
+magnet boundary does not condemn a generator. **What survives is shaft power and
+the generator, conditional on materials this leg could not close.** See
 [`audit.md`](audit.md) and [`findings-power.md`](findings-power.md).
 
 ## Documents

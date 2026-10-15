@@ -300,9 +300,16 @@ reading"; the paper itself was not opened).
     used to flash a field** `[discarded]` as an unsourced workaround.
 - **So the circularity is broken with one named gap:** you need *one* initial
   magnetisation of the iron. The sources offer a battery (voltaic pile) for that
-  flash. A voltaic pile needs a second metal and an electrolyte; the sibling's
-  materials list contains no zinc, so whether the first cell is in-closure is
-  **open and unsourced**: the sibling power leg reaches the same hole.
+  flash. A voltaic pile needs two dissimilar metals and an electrolyte. **An
+  earlier revision of this bullet said the sibling's materials list "contains no
+  zinc or other second metal". That is wrong on its face**, and the sibling
+  `Fluidic Bootstrap Project` `Conclusion A.md` says so directly: the list
+  carries copper, iron, lead and brass, and it carries zinc as *ore*, its brass
+  entry being "calamine process (zinc carbonate + copper)". So a galvanic couple
+  is **not materials-condemned**, and the item narrows rather than opening: what
+  the list names is zinc *ore*, not isolated zinc metal, and calamine cementation
+  yields brass rather than zinc. The residual question is one further step, the
+  isolation of an anode metal from that ore, and it is **narrowed, not open**.
 - **Relays themselves need a supply, not a magnetic bootstrap:** they run off the
   generator bus. The old telegraph architecture of a weak line current operating a
   relay that keys a **local** circuit is the historical pattern (`refreshed copy
@@ -444,8 +451,9 @@ In rough order of decisiveness:
    now.
 4. **Materials creep into the closure's exclusion list.** Any of: silver/tungsten
    contacts; permanent magnets for polarized/latching variants; imported
-   shellac/gutta-percha as the only viable winding insulation; zinc (or another
-   non-listed metal) for the first cell that flashes the generator field.
+   shellac/gutta-percha as the only viable winding insulation; the one further
+   step that isolates a first-cell anode metal (the list names zinc *ore*, not
+   zinc metal, §2.5).
 5. **Bootstrap failure.** A demonstrated inability to obtain the first
    magnetisation of the generator's iron from in-closure means only (no battery,
    no lodestone), §2.5's named gap.
@@ -461,13 +469,14 @@ In rough order of decisiveness:
 
 ## 5. ABSENT / not-found list (the honest boundary of this leg)
 
-1. **Published per-stage gain, fan-out count, or cascading limit for relay
-   logic.** No number anywhere in the retrieved sources. Rojas et al. 2005 (IEEE
-   Annals, doi:10.1109/mahc.2005.48) is the first place to look; not opened.
-2. **Zuse using current-free / dry switching to avoid contact erosion.** The
-   brief's claim is **`[discarded]`**, no source retrieved supports or describes
-   it. Both candidate sources were unreachable (Rojas reconstruction PDF via HAL,
-   bot wall; `zuse.zib.de/relay`, HTTP 429).
+1. **PARKED:** published per-stage gain, fan-out count, or cascading limit for
+   relay logic. No number anywhere in the retrieved sources. Rojas et al. 2005
+   (IEEE Annals, doi:10.1109/mahc.2005.48) is the first place to look and was not
+   opened. Paywalled; parked, not chased.
+2. **PARKED:** Zuse using current-free / dry switching to avoid contact erosion.
+   The brief's claim is **`[discarded]`**, no source retrieved supports or
+   describes it. Both candidate sources were unreachable (Rojas reconstruction
+   PDF via HAL, bot wall; `zuse.zib.de/relay`, HTTP 429). Access, not analysis.
 3. **Any relay lifetime, MTBF, or cycles-to-failure figure**, period or modern.
 4. **Period relay switching-time figures.** Only modern datasheet numbers from a
    search summary, `[unverified]`.
@@ -477,13 +486,22 @@ In rough order of decisiveness:
 6. **Copper, silver, tungsten contact wear data** (tungsten does not appear in the
    retrieved contact article at all).
 7. **Cotton, paper, glass, or oil/wax as period winding insulation**: no source
-   opened.
+   opened. Narrowed 2026-10-14: natural insulants are documented elsewhere in
+   this study (shellac and gutta-percha, §6 sources; wood and hemp in the power
+   leg's Newcomen train), so candidate pre-industrial insulants exist. Their
+   *performance* as dynamo winding insulation is unmeasured. Narrowed, not closed.
 8. **Whether 1830s–1890s wrought-iron relay cores suffered practical remanence
    sticking.**
 9. **A source for using a natural magnet (lodestone/magnetite) to flash a dynamo
    field.** **`[discarded]`** as a workaround: plausible, unsourced.
-10. **Whether the first exciting cell (voltaic pile) is inside the closure**: the
-    sibling's materials list has no zinc or other second metal; open, unsourced.
+10. **Whether the first exciting cell (voltaic pile) is inside the closure**:
+    **CORRECTED 2026-10-14.** An earlier revision said the sibling's materials
+    list "has no zinc or other second metal". That is wrong: the list carries
+    copper, iron, lead and brass, and it carries zinc as *ore*, its brass entry
+    being the calamine process (zinc carbonate + copper). A galvanic couple is
+    therefore not materials-condemned. The residual question is one step
+    further, whether an anode metal is isolated from that ore, and it is
+    **narrowed, not open**: see §2.5.
 11. **Per-stage gain or loss numbers for cams/linkages**, and for the Bush torque
     amplifier (its gain is argued from construction, not measured in the source).
 12. **Quantitative gain for pneumatic/air relays.** `Pneumatic logic` on Wikipedia
