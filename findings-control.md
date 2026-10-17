@@ -648,3 +648,12 @@ Sources not reached this pass: Rojas, arXiv:1603.02396 (the PDF returned no read
 text); Rojas et al. 2005, *IEEE Annals* (paywalled); `zuse.zib.de` (HTTP 429). Z3,
 Bell Labs Model V and Harvard Mark II relay counts seen only in search snippets are
 `[unverified]` and not used.
+
+### 7.5 Winding insulation, upgraded to a primary source `[verified]`
+
+Pope (1869, above) gives **silk-insulated copper wire** as the standard winding for
+telegraph electromagnet coils, and describes one maker's alternative of bare wire
+wound by "accurate machinery" so the turns stay separated. This moves the §2.3 silk
+claim from encyclopaedia tier to a primary period manual. It shows silk was the period
+practice for relay coils. It does not measure silk's performance on a dynamo winding,
+so `findings-power.md` §5 item 4 is unchanged.

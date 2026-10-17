@@ -267,6 +267,14 @@ as such here.)*
     and the fluidic element's channel geometry is its whole specification. No
     source in this study addresses the pairing, and closing it needs sources the
     workspace does not hold. Parked, not answered.
+11. **PARKED 2026-10-17: the primary-source upgrade for this leg.** An attempt to
+    replace the encyclopaedia tier with the 1866 to 1867 originals reached none of
+    them: Siemens and Wheatstone in *Proc. R. Soc.* 15 (royalsocietypublishing.org,
+    HTTP 403), Varley's patent and Wilde's paper (search snippets only), Henry 1831
+    in *Am. J. Sci.* 19 and Sturgeon 1825 (citations only, texts not reached). So the
+    dynamo's core material, winding insulation and first excitation remain at the
+    tier recorded in §0. Access, not analysis. One related claim did reach primary
+    tier, silk-insulated relay windings: see `findings-control.md` §7.5.
 
 ---
 
