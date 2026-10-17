@@ -88,15 +88,20 @@ audit.md             the criterion applied across the three sibling repos: the
 findings-power.md    the power leg: which prime movers sit inside the closure,
                      which are condemned, and the mobile-vs-stationary finding
 findings-control.md  the control leg: does relay logic compose, and can it be
-                     built in-closure? (it can, on the evidence found)
+                     built in-closure? (it composes; its contacts were platinum,
+                     reachable only from a placer in E, §7)
 findings-gain.md     the gain leg: is the sibling's cascade verdict an inversion?
                      (gain is ~2–10, not 0.10–0.51; the limit is fan-out)
 findings-logic.md    the logic leg, the count the study could not supply: how
                      many elements a replication controller needs, derived from
                      its structure instead of assumed
-model/               the arithmetic behind findings-logic.md. Standard library
-                     only. Run `python model/controller_budget.py`, or add
-                     `--verify` for the self-checks
+findings-tooling.md  the structure-and-tooling leg: iron has a measured cost,
+                     tool-making is unmeasured
+model/               standard library only; add `--verify` for self-checks.
+                     `controller_budget.py`: the arithmetic behind
+                     findings-logic.md, fluidic and relay. `closure_graph.py`:
+                     all legs in one table, and which open quantities the
+                     verdict turns on
 NOTICE.md            sources, rights, and the evidence rule
 ```
 
@@ -122,8 +127,11 @@ demonstrated impossibility. That is the honest shape of the study.
   a **self-excited dynamo needs no permanent magnet**. A **stationary** replicator
   is not condemned; a **mobile** one is not shown to work.
 - **Relay logic was dismissed too fast.** It **composes**, per-stage gain > 1 by
-  architecture, and its materials sit inside the closure, so the fluidic cascade
-  wall is specific to fluidics, not to non-semiconductor control.
+  architecture, and its coils and cores sit inside the closure, so the fluidic
+  cascade wall is specific to fluidics, not to non-semiconductor control. Its
+  contacts do not: period relays used platinum points, which is outside K and
+  reachable only from a platinum placer in the environment (`findings-control.md`
+  §7).
 - **And the cascade verdict itself was inverted.** `findings-gain.md` shows the
   sibling read a **required** control fraction (0.10–0.51) as an **available**
   gain. Belsterling's *Fluidic Systems Design* (1971), read directly, defines a
@@ -141,6 +149,12 @@ demonstrated impossibility. That is the honest shape of the study.
   the small share the floor implied. The fan-out limit the sibling called a wall
   appears in the same arithmetic as a doubling of the element count: a price,
   with a number attached.
+- **And the decisive measurements are not the ones the study named.**
+  `model/closure_graph.py` puts every leg in one table. Fluidic gain is not a
+  single point of failure, because the relay route is an alternative. The only
+  two open quantities whose failure alone condemns the replicator are
+  **tool-making** (`findings-tooling.md`) and **machine-geometry drift**
+  (`copy-fidelity`), because control and structure both stand on them.
 
 ## Rights
 
