@@ -570,3 +570,81 @@ read):**
 operate/release times (TE V23105, Omron G6K, Panasonic TQ, reed relays) and
 pneumatic/air-relay gain characterisation (ControlAir, InstrumentationTools,
 Clippard). Treated as leads for a follow-up, never as findings.
+
+---
+
+## 7. Addendum, 2026-10-17: relay contacts, and the relay route's element count
+
+Two questions this leg left open: what period relays made their contacts from, and
+what a relay controller costs. Sources below were read directly as raw text on
+2026-10-17, not through a search or summarising tool.
+
+### 7.1 Period relay contacts were platinum `[verified]`
+
+- **Pope, Frank L., *Modern Practice of the Electric Telegraph* (New York: Russell
+  Brothers, 1869)**, archive.org item `modernpracticee04popegoog`. Primary. The
+  relay closes the local circuit "through the platina points of the relay". When
+  the points are "too much corroded" they are cleaned with a very fine file,
+  removing as little platinum as possible. The same text notes points sticking when
+  "oxidized and dirty".
+- **Prescott, George B., *History, Theory, and Practice of the Electric Telegraph*
+  (Boston: Ticknor and Fields, 1860)**, archive.org item
+  `historytheorypra00presrich`. Primary. Morse's receiving magnet brings "a platina
+  point in contact with a little platina disc" to close the local battery circuit.
+
+**What this changes.** The materials premise in §1 was tested on the coil and the
+core, and it held there. It was not tested on the contacts, and the period record
+names platinum. `protocol.md` §8 places refined contact metals outside K. So the
+relay route moves from **materials inside** to **conditional on contacts**.
+
+### 7.2 Platinum from the environment, not the kit `[verified]`, tertiary
+
+K is not amended (`protocol.md` §8 fixes it before the evidence). The open question is
+whether platinum is reachable from **E**:
+
+- Platinum occurs uncombined as **native platinum**, mostly in alluvial (placer)
+  deposits, and was first worked by pre-Columbian South Americans, who combined gold
+  and platinum powders "by sintering" (Wikipedia, *Platinum*, History and Occurrence,
+  read 2026-10-17). No refining step is described for that work.
+- **The condition is a site condition.** Platinum is very rare in the crust, so this
+  holds only for an environment that includes a platinum placer. A replicator sited
+  elsewhere does not have it. The pre-Columbian product was a gold-platinum alloy, so
+  whether native grains make a durable relay point is **ABSENT**.
+
+The in-K alternative is weaker than it first looked. **US Patent 434,585,
+"Telegraph-relay" (issued 1890-08-19)**, read on Google Patents, uses "pieces of carbon"
+with platinum as the alternative. But it describes a pressure-variable resistance, not
+a make-and-break contact, so it does not show carbon serving as an ordinary relay
+point. Copper and brass contacts: **ABSENT** from any period source reached.
+
+### 7.3 The relay route's element count `[derived]`
+
+The sequencer in `model/controller_budget.py` does not depend on the substrate. Only
+the fan-out does. A multipole relay switches one separate circuit per contact set, so
+its fan-out is its contact count. Harvard Mark I had "3,500 multipole relays with
+35,000 contacts" (Wikipedia, *Harvard Mark I*, quoting IBM Archives, read
+2026-10-17), an average of ten.
+
+At fan-out 10, against the fluidic case at fan-out 3:
+
+- 10 steps: 23 relays against 45 fluidic elements
+- 20 steps: 50 against 81
+- 50 steps: 122 against 201
+
+So a relay controller needs **50 to 60 per cent of the fluidic element count**, and
+this is an upper bound because relays form AND from contacts in series. Ten is a
+machine average, not a per-relay maximum, and it counts contacts, not the loads one
+contact can carry.
+
+### 7.4 What is still ABSENT
+
+1. **Hours to make one relay by hand.** No period or modern source reached prices it,
+   so the relay route has an element count and no labour figure.
+2. **Contact life in operations**, for platinum, native-platinum alloy, carbon, copper
+   or brass.
+3. **Whether native placer platinum, unrefined, makes a working relay point.**
+
+Sources not reached this pass: Rojas, arXiv:1603.02396 (the PDF returned no readable
+text); Rojas et al. 2005, *IEEE Annals* (paywalled); `zuse.zib.de` (HTTP 429). Z3,
+Bell Labs Model V and Harvard Mark II relay counts seen only in search snippets are
+`[unverified]` and not used.

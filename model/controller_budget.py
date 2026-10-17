@@ -66,6 +66,14 @@ from typing import List, Tuple
 # swept in section 5.
 FANOUT_DOCUMENTED: int = 3
 
+# The relay route, for comparison. A multipole relay switches one separate
+# circuit per contact set, so its fan-out is its contact count. Harvard Mark I
+# had "3,500 multipole relays with 35,000 contacts" (Wikipedia, *Harvard Mark I*,
+# quoting IBM Archives; tertiary, read directly 2026-10-17), an average of ten.
+# That is an average over a machine, not a per-relay maximum, and it counts
+# contacts, not loads one contact can drive. findings-control.md section 7.
+FANOUT_RELAY: int = 10
+
 
 def buffer_tree(loads: int, fanout: int) -> Tuple[int, int]:
     """Elements needed to drive `loads` inputs from one signal at `fanout`.
@@ -296,6 +304,23 @@ def report() -> str:
     add("  called a wall: it is a cost, and a modest one.")
     add("")
 
+    add(f"THE RELAY ROUTE  (same netlist, fan-out {FANOUT_RELAY})")
+    add("-" * 78)
+    add(f"  {'steps':>6} {'fluidic':>8} {'relay':>7} {'relay buffers':>14}")
+    for n in (10, 20, 25, 50, 100):
+        f = cycle(n).breakdown()
+        r = cycle(n, fanout=FANOUT_RELAY).breakdown()
+        add(f"  {n:>6} {f['total']:>8} {r['total']:>7} {r['buffers']:>14}")
+    add("")
+    add("  A multipole relay drives about ten circuits (Harvard Mark I average),")
+    add("  so most of the buffer column disappears and a relay controller needs")
+    add("  50 to 60 per cent of the fluidic element count. This is an upper")
+    add("  bound: a relay forms AND from contacts in series, so the transition")
+    add("  gates are partly free. No labour figure is given, because no source")
+    add("  reached prices a hand-built relay. Per-relay hours and contact life")
+    add("  are ABSENT (findings-control.md section 7).")
+    add("")
+
     add("THE LABOUR THIS IMPLIES  (sibling prices, unchanged)")
     add("-" * 78)
     add(f"  per element, make and assemble   {HOURS_PER_ELEMENT[0]:.0f}"
@@ -386,6 +411,10 @@ def verify() -> None:
     while cycle(n).elements() < 20:
         n += 1
     assert n < 10, n
+
+    # Wider fan-out never costs elements: the relay route is no larger.
+    for n in (10, 20, 50, 100):
+        assert cycle(n, fanout=FANOUT_RELAY).elements() <= cycle(n).elements()
 
     # Labour is monotone in element count.
     assert control_hours(100)[0] > control_hours(50)[0]

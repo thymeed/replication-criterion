@@ -292,7 +292,7 @@ Apply the criterion (`protocol.md` §3) with K = the pre-industrial closure
 | Leg | In-closure candidate | Where it stops |
 |---|---|---|
 | Precision | three-plate generation | **conditional** on process schedule; resets the workpiece, not the machine |
-| Control | fluidic logic; relay logic | fluidic **fan-out depth**; relay costs unquantified |
+| Control | fluidic logic; relay logic | fluidic **fan-out depth**; relay **contacts** (platinum, reachable only from a placer in E) and per-relay labour |
 | Power | combustion / water / wind + self-excited dynamo | first excitation; soft-iron cores; insulation |
 | Disclosure | n/a | the literature discloses; nobody demonstrates the brain being made |
 
