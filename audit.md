@@ -268,8 +268,12 @@ the question and the evidence discipline (see `NOTICE.md`).
 Apply the criterion (`protocol.md` §3) with K = the pre-industrial closure
 (`protocol.md` §8):
 
-- **Structure and tooling: inside.** Iron, steel, copper, brass, glass, clay,
-  wood are all in K.
+- **Structure and tooling: materials inside; tool-making unmeasured.** Iron,
+  steel, copper, brass, glass, clay, wood are all in K. *Revised 2026-10-17:*
+  this line first read "inside" on the materials alone. `findings-tooling.md`
+  finds bloomery iron has a measured cost (about 100 kg charcoal and 25
+  person-days per kg of bar iron, Crew 1991) and that making tools from it has no
+  measured hardness, life or accuracy in any source reached.
 - **Precision: inside, conditionally, and now tested.** The three-plate process is
   in K (abrasive + three rough plates + labour), and the sibling's analysis
   (`findings-transfer.md`) has now resolved the transfer question: the effect is
