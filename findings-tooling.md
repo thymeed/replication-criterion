@@ -79,7 +79,56 @@ both inside K.
   measured error of the master screw, of the lathe that cut it, or of the tools
   that made that lathe.
 
-### 2.3 Carburising and hardening: one modern datum only
+### 2.3 Hand-cut files: the process is documented, and the steel is the question `[verified]`
+
+Added 2026-10-17. **[Nicholson File Co.], *A Treatise on Files and Rasps* (1878)**,
+archive.org item `atreatiseonfile00provgoog`. Primary.
+
+- **Hand cutting needs only simple tools.** The text says the hand cutter's tools are
+  so simple that they are likely the same ones earlier generations used. Teeth are
+  raised by chisel blows in both hand and machine cutting.
+- **Hand-cut teeth are irregular,** in spacing and height, and the irregularity grows
+  with the cutter's lack of skill. The text argues machine-cut files cut as fast and
+  smoother. So a hand-cut file works and is worse, and the treatise says so without
+  measuring by how much.
+- **Hardening is a stated recipe:** teeth coated with a protective paste, heated to a
+  red heat, quenched, cleaned, and the tangs softened in a bath of lead. Skill is
+  required because the sections are unsymmetrical. No temperatures or hardness
+  figures are given.
+- **The steel is the closure question.** Files were made from crucible ("cast") steel,
+  until recently imported mostly from Sheffield. **Rasps were formerly made of
+  "blister" steel**, which is cementation steel, the carburising route K already names.
+  So a file-like tool from K's own steel is documented for rasps. Whether a fine file
+  from blister steel performs adequately is **ABSENT**. Crucible steel is not named in
+  K, and whether it is inside C(K, E) is not tested here.
+
+### 2.4 Whitworth (1840): the drift problem, stated by its author `[verified]`
+
+Added 2026-10-17. **Whitworth, J., "A paper on plane metallic surfaces or true planes",
+read at the British Association, Glasgow, 1840**, reprinted in *Miscellaneous Papers on
+Mechanical Subjects* (London: Longman, 1858), archive.org item
+`miscellaneouspa00whitgoog`. Primary.
+
+- **The drift problem, in his words.** A footnote says that in machines meant for
+  reproducing other machines, surface errors matter most, because "the original
+  defects are propagated in an aggravated form". That is the study's
+  geometry-drift question, stated in 1840. He states it; he does not measure it.
+- **Grinding cannot remove an original error.** Grinding a concave surface against a
+  true one reduces the first error by creating the opposite error in the true surface.
+  **Scraping**, checked with colouring matter against a reference, is "the only certain
+  means" of accuracy in his account. The file is used first and is not precise enough
+  to finish.
+- **The three-plate method, as he gives it:** three plates of hard cast iron, ribbed
+  on the back against springing, each resting on three points. One is the model, the
+  other two are scraped to it and then compared with each other.
+- **Two closure points.** The plates are **cast iron**, and K names bloomery iron and
+  carburised steel, not a blast furnace. The sibling `copy-fidelity` protocol allows
+  steel plates as well, so the method is not tied to cast iron, but whether plates
+  forged from bloomery iron are stiff and sound enough to hold flat is **ABSENT**.
+  Second, he says a planing machine greatly speeds the first stage. That is a speed
+  claim, not a requirement.
+
+### 2.5 Carburising and hardening: one modern datum only
 
 - A 2025 pack-carburising study (`ph02.tci-thaijo.org`, article 252570) was read
   only through a summarising tool and is **`[unverified]`**. It is also a modern
@@ -117,6 +166,10 @@ share an unmeasured rate.
    pumice). None found for pre-industrial practice.
 5. **Crew's full yield table.** Only the abstract was readable.
 6. **Bloomery success rate with bellows rather than an electric blower.**
+7. **Performance of a fine file cut from blister steel.** Documented for rasps only.
+8. **Whether three-plate scraping works on plates forged from bloomery iron.** Whitworth
+   specifies hard cast iron.
+9. **A measured rate for Whitworth's "aggravated" propagation.** Stated, not measured.
 
 ---
 
@@ -132,6 +185,12 @@ share an unmeasured rate.
 - Nasmyth, J., ed. Smiles, S. (1883), *James Nasmyth, Engineer: An
   Autobiography*, Project Gutenberg eBook 476,
   https://www.gutenberg.org/cache/epub/476/pg476.txt
+
+- [Nicholson File Co.] (1878), *A Treatise on Files and Rasps*,
+  https://archive.org/details/atreatiseonfile00provgoog
+- Whitworth, J. (1840), "A paper on plane metallic surfaces or true planes", in
+  *Miscellaneous Papers on Mechanical Subjects* (1858),
+  https://archive.org/details/miscellaneouspa00whitgoog
 
 **Attempted and failed:**
 
