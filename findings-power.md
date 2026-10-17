@@ -307,6 +307,16 @@ as such here.)*
 This is a negative-leaning result about *electricity* and a positive one about
 *shaft power*. Both are stated, and neither is dressed up.
 
+**Correction, 2026-10-17.** The last sentence of the headline above calls
+cascade gain the best-evidenced binding constraint. That was true of the evidence
+when this leg was written and is no longer true. `findings-gain.md`, written
+afterwards, shows the cascade verdict read a required control fraction as an
+available gain: on the sibling's own numbers the gain is about 2 to 10, above
+parity, and a fluidic stage can drive a successor. The binding constraint on the
+control leg is now **fan-out depth**, which `findings-logic.md` prices as a cost
+on the element count rather than a wall. The headline is left as written so the
+change is visible; read its last sentence with this correction.
+
 ---
 
 ## 7. Sources

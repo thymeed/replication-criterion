@@ -217,6 +217,27 @@ What can be said from the criterion before any source is read:
 the criterion's verdict on power is *undetermined*, and that is stated rather
 than guessed.
 
+**Status, updated 2026-10-17: the leg has since run, and the pinch point above
+did not hold.** See `findings-power.md`. The text above is kept as it was written
+before any source was read, because its prediction is part of the record. The
+result, in its terms:
+
+- **The collapse holds for direct conversion only.** PV and thermoelectric
+  plants are condemned by the data-center rule, so for that family the two
+  disqualifiers are one dependency.
+- **The dynamo is not condemned.** A self-excited dynamo needs no permanent
+  magnet (Wilde, Siemens, Wheatstone and Varley, 1866 to 1867), so the magnet
+  boundary does not reach it. The generator moves from "may be condemned" to
+  **marginal**, and its residual hole is soft-iron cores, winding insulation and
+  first excitation, which are materials and performance questions rather than a
+  principle.
+- **Shaft power survives outright.** Newcomen, Watt, water wheels and windmills
+  are documented as built from in-closure materials. Stationary is not condemned;
+  mobile is not shown to work.
+
+So the verdict on power is no longer undetermined. It is **inside, conditionally**,
+as the synthesis below states.
+
 ---
 
 ## Leg 4: Disclosure: does the literature say what it leaves out?

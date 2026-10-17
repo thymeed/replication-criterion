@@ -79,7 +79,9 @@ where they appear.
 ## This repository's licence
 
 Written analysis and documentation: **Creative Commons Attribution 4.0
-International (CC BY 4.0)**, see `LICENSE`. There is no code here, and this
-project does not intend to add any.
+International (CC BY 4.0)**, see `LICENSE`. The one piece of code,
+`model/controller_budget.py`, was added with the logic leg after this notice
+first said the repository would hold none. It is arithmetic on a logic netlist,
+not a simulation (`findings-logic.md` §0), and it is covered by the same licence.
 
 Copyright © 2026 Thymeed.
